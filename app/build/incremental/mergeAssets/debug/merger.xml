@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/benshep/Documents/Github/ReadFTDI/app/src/main/assets" >
+            <file
+                name="sensorData.yaml"
+                path="/Users/benshep/Documents/Github/ReadFTDI/app/src/main/assets/sensorData.yaml" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/benshep/Documents/Github/ReadFTDI/app/src/debug/assets" />
+    </dataSet>
+
+</merger>

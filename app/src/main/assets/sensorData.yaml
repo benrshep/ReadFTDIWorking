@@ -1,0 +1,70 @@
+--- !!MessageTemplate
+sensorName : HMIBattery
+id : 0x539
+# (20) (04)
+length : 8
+
+--- !!Data
+dataName : BatteryCurrent
+startBit : 0
+endBit : 15
+andMask : FFFF000000000000
+byteOrder : Motorola
+unit : A
+valueType : signed
+factor : 1
+offset : 0
+minimum : 0
+maximum : 0
+
+--- !!Data
+dataName : BatterySOC
+startBit : 16
+endBit : 23
+andMask : FF0000000000
+byteOrder : Motorola
+unit : %
+valueType : unsigned
+factor : 0.5
+offset : 0
+minimum : 0
+maximum : 100
+
+--- !!Data
+dataName : BatteryTemperature
+startBit : 24
+endBit : 31
+andMask : FF00000000
+byteOrder : Motorola
+unit : %
+valueType : signed
+factor : 1
+offset : 0
+minimum : 0
+maximum : 0
+
+--- !!Data
+dataName : BatteryVoltage
+startBit : 32
+endBit : 47
+andMask : FFFF0000
+byteOrder : Motorola
+unit : V
+valueType : unsigned
+factor : 0.125
+offset : 0
+minimum : 0
+maximum : 0
+
+--- !!Data
+dataName : 12VoltVoltage
+startBit : 48
+endBit : 63
+andMask : FFFF
+byteOrder : Motorola
+unit : V
+valueType : unsigned
+factor : 0.001
+offset : 0
+minimum : 0
+maximum : 0
